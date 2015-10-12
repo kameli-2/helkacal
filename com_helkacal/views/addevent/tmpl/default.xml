@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <layout title="COM_HELKACAL_ADDEVENT_VIEW_DEFAULT_TITLE">
+                <message>
+                        <![CDATA[COM_HELKACAL_ADDEVENT_VIEW_DEFAULT_DESC]]>
+                </message>
+        </layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="category"
+				type="category"
+				extension="com_content"
+				label="COM_HELKACAL_ADDEVENT_CATEGORY_LABEL"
+				description="COM_HELKACAL_ADDEVENT_CATEGORY_DESC"
+			/>
+			<field
+				name="categorydepth"
+				type="integer"
+				first="1"
+				last="10"
+				step="1"
+				default="2"
+				label="COM_HELKACAL_ADDEVENT_DEPTH_LABEL"
+				description="COM_HELKACAL_ADDEVENT_DEPTH_DESC"
+			/>
+                        <field
+                                name="calendarurl"
+                                type="menuitem"
+                                label="COM_HELKACAL_CALENDARURL_LABEL"
+                                description="COM_HELKACAL_CALENDARURL_DESC"
+                        />
+		</fieldset>
+	</fields>
+</metadata>

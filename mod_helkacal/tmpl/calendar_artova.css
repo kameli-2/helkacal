@@ -1,0 +1,128 @@
+/* calendar */
+table.mod_helkacal_calendar {
+/*	border-left:1px solid #999;*/
+}
+table.mod_helkacal_calendar td {
+	text-align: center;
+}
+.mod_helkacal_calendar-month {
+	text-align: center;
+	font-size: 120%;
+	font-family: 'OpenSans-bold';
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.mod_helkacal_calendar-month a {
+	text-decoration: none;
+}
+.mod_helkacal_leftarrow, .mod_helkacal_rightarrow {
+	cursor: hand;
+	cursor: pointer;
+}
+
+.mod_helkacal_calendar-today {
+	background-color: #999;
+}
+.mod_helkacal_calendar-eventful {
+	font-weight: bold;
+}
+td.mod_helkacal_calendar-day {
+/*	min-height:80px;*/
+	font-size:11px;
+	position:relative;
+}
+td.mod_helkacal_calendar-day-head {
+/*	background:#000; */
+	color: #888;
+	font-weight:bold;
+	text-align:center;
+	width:1.5em;
+	padding:5px;
+/*	border-bottom:1px solid #999;
+	border-top:1px solid #999;
+	border-right:1px solid #999;*/
+}
+
+.mod_helkacal_calendar-eventful a {
+	width: 95%;
+	height: 2.4em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* shared */
+td.mod_helkacal_calendar-day, td.mod_helkacal_calendar-day-np {
+	width: 1.5em;
+	height: 2.5em;
+/*	border-bottom:1px solid #999;
+	border-right:1px solid #999;*/
+}
+
+table.mod_helkacal_calendar a {
+	color: black;
+}
+td.mod_helkacal_calendar-eventful a:hover, td.mod_helkacal_calendar-selected a {
+	border: 2px solid black;
+	margin-left: -1px;
+	margin-top: -1px;
+	z-index: 2;
+}
+td.mod_helkacal_calendar-eventful a:hover div, td.mod_helkacal_calendar-selected a div {
+	margin-left: -1px;
+	margin-top: -1px;
+}
+td.mod_helkacal_calendar-eventful a div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+/*	text-decoration: underline;*/
+}
+
+/* Borders *//*
+td.mod_helkacal_calendar-day-head {
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+td.mod_helkacal_calendar-day-head:first-child {
+	border-radius: 15px 0px 0px 0px;
+	border-left: 3px solid black;
+}
+td.mod_helkacal_calendar-day-head:last-child {
+	border-radius: 0px 15px 0px 0px;
+	border-right: 3px solid black;
+}
+td.mod_helkacal_calendar-day:first-child, td.mod_helkacal_calendar-day-np:first-child {
+	border-left: 3px solid black;
+}
+td.mod_helkacal_calendar-day:last-child, td.mod_helkacal_calendar-day-np:last-child {
+	border-right: 3px solid black;
+}
+tr.mod_helkacal_calendar-row:last-child td {
+	border-bottom: 3px solid black;
+}
+*/
+.mod_helkacal_container {
+	padding: 1em;
+}
+td.mod_helkacal_calendar-day-np	{
+/*	background:#eee;*/
+	height: auto;
+}
+tr.mod_helkacal_calendar-year {
+	display: none;
+}
+.mod_helkacal_container .helkacal_category {
+	float: none;
+	width: 3em;
+	height: 3em;
+	margin: 0 0.5em;
+	position: relative;
+}
+.mod_helkacal_container .helkacal_category:hover {
+	box-shadow: 0px 0px 5px #000;
+	cursor: hand;
+	cursor: pointer;
+}

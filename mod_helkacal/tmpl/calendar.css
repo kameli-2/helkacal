@@ -1,0 +1,103 @@
+/* calendar */
+table.mod_helkacal_calendar {
+/*	border-left:1px solid #999;*/
+}
+table.mod_helkacal_calendar td {
+	text-align: center;
+}
+.mod_helkacal_calendar-year, .mod_helkacal_calendar-month {
+	text-align: center;
+}
+.mod_helkacal_leftarrow, .mod_helkacal_rightarrow {
+	cursor: hand;
+	cursor: pointer;
+}
+.mod_helkacal_leftarrow:hover, .mod_helkacal_rightarrow:hover {
+	background-color: #ccc;
+}
+
+.mod_helkacal_calendar-today {
+	background-color: #999;
+}
+.mod_helkacal_calendar-eventful {
+	font-weight: bold;
+}
+td.mod_helkacal_calendar-day {
+/*	min-height:80px;*/
+	font-size:11px;
+	position:relative;
+}
+td.mod_helkacal_calendar-day-head {
+	background:#000;
+	color: #fff;
+	font-weight:bold;
+	text-align:center;
+	width:1.5em;
+	padding:5px;
+/*	border-bottom:1px solid #999;
+	border-top:1px solid #999;
+	border-right:1px solid #999;*/
+}
+
+.mod_helkacal_calendar-eventful a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* shared */
+td.mod_helkacal_calendar-day, td.mod_helkacal_calendar-day-np {
+	width: 1.5em;
+	height: 2.5em;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
+}
+
+table.mod_helkacal_calendar a {
+	color: black;
+}
+td.mod_helkacal_calendar-eventful a:hover, td.mod_helkacal_calendar-selected a {
+	border: 2px solid black;
+	margin-left: -2px;
+	margin-top: -2px;
+}
+
+td.mod_helkacal_calendar-eventful a div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-decoration: underline;
+}
+
+/* Borders */
+td.mod_helkacal_calendar-day-head {
+	border-bottom: 3px solid black;
+	border-top: 3px solid black;
+}
+td.mod_helkacal_calendar-day-head:first-child {
+	border-radius: 15px 0px 0px 0px;
+	border-left: 3px solid b√lack;
+}
+td.mod_helkacal_calendar-day-head:last-child {
+	border-radius: 0px 15px 0px 0px;
+	border-right: 3px solid black;
+}
+td.mod_helkacal_calendar-day:first-child, td.mod_helkacal_calendar-day-np:first-child {
+	border-left: 3px solid black;
+}
+td.mod_helkacal_calendar-day:last-child, td.mod_helkacal_calendar-day-np:last-child {
+	border-right: 3px solid black;
+}
+tr.mod_helkacal_calendar-row:last-child td {
+	border-bottom: 3px solid black;
+}
+.mod_helkacal_container {
+	padding: 1em;
+}
+td.mod_helkacal_calendar-day-np	{
+	background:#eee;
+	height: auto;
+}

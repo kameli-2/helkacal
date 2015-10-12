@@ -1,0 +1,397 @@
+div.helkacal_event {
+	margin: 1em 0;
+	padding: 1em;
+/*	box-shadow: 0px 0px 12px -5px black;*/
+/*	background-color: rgb(251,251,251);*/
+	border-bottom: thin solid #cccccc;
+}
+/*div.helkacal_event:hover {
+	background-color: white;
+}*/
+div.helkacal_event div {
+	display: inline-block;
+}
+
+div.helkacal_eventpage p img {
+	max-width: 100%;
+}
+
+div.helkacal_date {
+	background-color: #eee;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	padding: 0.1em;
+	vertical-align: top;
+	width: 21%;
+	height: 3em;
+	background-size: 200%;
+	background-position: center;
+	position: relative;
+	z-index: 0;
+}
+
+div.helkacal_bgimage .helkacal_datecontainer::after {
+	background-color: black;
+	z-index: -1;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: "";
+	box-shadow: 0px 0px 20px 15px black;
+	border-radius: 15px;
+}
+/*
+div.helkacal_date::after {
+	background-color: black;
+	z-index: 0;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	content: "";
+}*/
+div.helkacal_date span.helkacal_dateimglink {
+	position:absolute; 
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+
+	/* edit: added z-index */
+	z-index: 3;
+}
+div.helkacal_date div.helkacal_datecontainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+div.helkacal_date div.helkacal_datecontainer div {
+	margin: -0.2em 0;
+	display: block;
+	font-family: OpenSans-bold;
+	text-shadow: 0px 0px 5px black;
+}
+div.helkacal_smallmonth {
+	font-size: 40%;
+	letter-spacing: -0.8px;
+}
+div.helkacal_titlecontainer {
+	font-size: 130%;
+	width: 55%;
+	padding: 0 0.2em;
+	vertical-align: middle;
+}
+div.helkacal_eventtime, div.helkacal_location {
+	font-size: 14px;
+	color: #6c6c6c;
+	float: left;
+}
+div.helkacal_eventtime {
+	border-right: thin solid #cccccc;
+	padding-right: 10px;
+	margin-right: 5px;
+}
+div.helkacal_event div.helkacal_eventtime {
+	border-right: none;
+}
+/*div.helkacal_titlecontainer .helkacal_eventtime,
+div.helkacal_titlecontainer .helkacal_location {
+	width: auto;
+}
+*/
+div.helkacal_location a:link, div.helkacal_location a:visited {
+        color: grey;
+        text-decoration: inherit;
+}
+div.helkacal_location a:active, div.helkacal_location a:hover {
+        text-decoration: underline;
+}
+
+div.helkacal_titlecontainer div {
+	width: 100%;
+	display: inline-block;
+}
+div.helkacal_categorycontainer {
+	width: 10%;
+	min-width: 2.4em;
+	max-width: 4em;
+	float: right;
+	display: inline-block;
+}
+.helkacal_event .helkacal_categorycontainer .helkacal_category {
+	margin: 0.1em;
+}
+img.helkacal_category_symbol {
+	width: 100%;
+	vertical-align: middle;
+}
+
+/* Category colors */
+.helkacal_event.helkacal_category157 .helkacal_date { background-color: #6D8790; }
+.helkacal_event.helkacal_category158 .helkacal_date { background-color: #A9A2D0; }
+.helkacal_event.helkacal_category159 .helkacal_date { background-color: #DE6966; }
+.helkacal_event.helkacal_category160 .helkacal_date { background-color: rgb(192, 187, 187); }
+.helkacal_event.helkacal_category161 .helkacal_date { background-color: rgb(232, 149, 188); }
+.helkacal_event.helkacal_category162 .helkacal_date { background-color: #C2B84C; }
+.helkacal_event.helkacal_category163 .helkacal_date { background-color: #F8C137; }
+.helkacal_event.helkacal_category164 .helkacal_date { background-color: #72B4A3; }
+.helkacal_event.helkacal_category165 .helkacal_date { background-color: #896D55; }
+.helkacal_event.helkacal_category166 .helkacal_date { background-color: #41A2D5; }
+/* End of category colors */
+.helkacal_some {
+	width: 100%;
+	text-align: left;
+}
+div.helkacal_some img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 26px;
+	height: 26px;
+}
+div.helkacal_some div {
+	display: inline-block;
+	border-radius: 35px;
+	min-width: 20px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+div.helkacal_some div.helka-facebook {
+	margin-right: 10px;
+}
+div.helkacal_some div p {
+	vertical-align: middle;
+	margin: 1px 2px;
+}
+
+.helkacal_eventpage .helkacal_some {
+	text-align: left;
+	margin: 10px 0 25px 0;
+	border-top: thin solid #ccc;
+}
+
+h2.helkacal_month:first-letter {
+	text-transform: uppercase;
+}
+.helkacal_eventdesc, .helkacal_eventdesc div {
+	width: 100%;
+	
+  -ms-word-break: break-all;
+
+       /* Be VERY careful with this, breaks normal words wh_erever */
+       word-break: break-all;
+
+       /* Non standard for webkit */
+       word-break: break-word;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+/*.helkacal_eventdesc img {
+	max-width: 100%;
+}
+*/
+
+img.large-picture {
+    width: 100% !important;
+}
+@media only screen and (min-width: 768px) {
+	img.large-picture {
+	    width: 100% !important;
+	    margin:0 !important;
+	    margin-bottom: 20px !important;
+	    margin-top: 20px !important;
+	}
+
+	div.small-picture {
+	    float:right !important;
+	    width: 60% !important;
+	}
+
+	img.small-picture {
+	    width: 34% !important;
+	    margin:0 !important;
+	    margin-bottom: 20px !important;
+	    margin-top: 20px !important;
+	    float:left !important;
+	}
+}
+
+p.readmore {
+	width: 100%;
+	float: right;
+	text-align: right;
+}
+
+p.readmore a {
+	color: black;
+	font-family: 'OpenSans-Semibold', Arial, sans-serif;
+}
+
+.helkacal_url {
+	margin: 0.5em 0;
+}
+.helkacal_eventpage .helkacal_url a {
+	font-size: 80%;
+	color: grey;
+}
+.helkacal_contactinfo {
+	white-space: pre;
+	font-size: 80%;
+	border: thin solid #cccccc;
+	background-color: #f6f6f6;
+	padding: 0.2em;
+	margin: 0.2em 0;
+	display: inline-block;
+}
+.helkacal_contactinfo img {
+	float: left;
+	margin-right: 1em;
+}
+.helkacal_publishbuttons {
+	text-align: center;
+	margin-top: 1em;
+	display: inline-block;
+	width: 100%;
+}
+.helkacal_publishbuttons .helkacal_publishbuttoncontainer {
+	width: 6em;
+	font-size: 60%;
+	overflow: hidden;
+	display: inline-block;
+}
+.helkacal_publishbuttons div div {
+	border-radius: 3em;
+	width: 3em;
+	height: 3em;
+	padding: 3px;
+	margin: 0 1em;
+	color: transparent;
+	background-repeat: no-repeat;
+	background-size: 3.6em;
+	cursor: hand;
+	cursor: pointer;
+	display: inline-block;
+}
+.helkacal_publish, .helkacal_success {
+	border: 2px solid green;
+	background-color: lightgreen;
+}
+.helkacal_publish {
+	background-image: url('../../../img/publish.png');
+}
+.helkacal_publish:hover {
+	background-color: rgb(165, 255, 165);
+}
+.helkacal_delete {
+	border: 2px solid red;
+	background-color: rgb(255, 155, 155);
+	background-image: url('../../../img/delete.png');
+}
+.helkacal_delete:hover {
+	background-color: rgb(255, 180, 180);
+}
+.helkacal_edit {
+	border: 2px solid rgb(166, 166, 0);
+	background-color: rgb(255, 255, 56);
+	background-image: url('../../../img/edit.png');
+}
+.helkacal_edit:hover {
+	background-color: rgb(255, 255, 200);
+}
+.helkacal_loading {
+	background-image: url('../../../img/loading.gif');
+}
+.helkacal_success {
+	background-image: url('../../../img/success.png');
+}
+#helkacal_catfiltercontainer {
+	display: inline-block;
+}
+.helkacal_category {
+	width: 10%;
+	min-width: 2.4em;
+	max-width: 4em;
+	float: right;
+	display: inline-block;
+	background-color: #ccc;
+/*	border: 1px solid transparent;*/
+	border-radius: 3em;
+	overflow: hidden;
+}
+#helkacal_catfiltercontainer .helkacal_category:hover {
+/*	border-color: black;*/
+	box-shadow: 0px 0px 5px #000;
+	cursor: hand;
+	cursor: pointer;
+}
+.helkacal_category .helkacal_category_symbol {
+/*	border-radius: 3em;*/
+	margin: -2px;
+	width: 109%;
+	text-align: center;
+}
+#helkacal_catfiltercontainer .helkacal_category {
+	width: 3em;
+	height: 3em;
+	float: none;
+	margin: 0 0.5em;
+	position: relative;
+}
+/*#helkacal_catfiltercontainer .helkacal_category_symbol {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}*/
+.helkacal_catinactive {
+	opacity: 0.3;
+}
+h2.helkacal_eventtitle {
+	margin-bottom: 0;
+
+}
+.helkacal_title a, .helkacal_eventtitle {
+	color: black;
+	text-decoration: none;
+	font-family: 'OpenSans-Bold', Arial, sans-serif;
+	font-size: 22px;
+}
+.helkacal_eventtitle {
+	width: 80%;
+	display: inline-block;
+	margin-top: 10px;
+}
+/*.helkacal_title a:active, .helkacal_title a:hover {
+	color: grey;
+}*/
+.helkacal_eventtime img, .helkacal_location img {
+	max-height: 1em;
+	margin: 0 0.2em;
+}
+.helkacal_eventpage .helkacal_location_map {
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
+}
+div.helkacal_event div.helkacal_location_map,
+div.helkacal_event div.helkacal_introtext,
+div.helkacal_event div.helkacal_url,
+div.helkacal_event div.helkacal_contactinfo,
+div.helkacal_event p.readmore {
+	display: none !important;
+}
+.hidden {
+	display: none !important;
+}

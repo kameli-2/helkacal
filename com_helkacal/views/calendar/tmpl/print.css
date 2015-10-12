@@ -1,0 +1,290 @@
+@font-face {
+	font-family: BommerSlab;
+	font-weight: normal;
+	font-style: normal;
+	src: url("/components/com_helkacal/fonts/BommerSlab-Thin.eot");
+	src: url("/components/com_helkacal/fonts/BommerSlab-Thin.eot?#iefix") format('embedded-opentype'),
+	     url("/components/com_helkacal/fonts/BommerSlab-Thin.otf") format('opentype');
+	
+}
+@font-face {
+	font-family: BommerSlab;
+	font-weight: bold;
+	src: url("/components/com_helkacal/fonts/BommerSlab-Regular.eot");
+	src: url("/components/com_helkacal/fonts/BommerSlab-Regular.eot?#iefix") format('embedded-opentype'),
+	     url("/components/com_helkacal/fonts/BommerSlab-Regular.otf") format('opentype');
+}
+@font-face {
+	font-family: BommerSlab;
+	font-weight: bold;
+	font-style: italic;
+	src: url("/components/com_helkacal/fonts/BommerSlab-RegularItalic.eot");
+	src: url("/components/com_helkacal/fonts/BommerSlab-RegularItalic.eot?#iefix") format('embedded-opentype'),
+	     url("/components/com_helkacal/fonts/BommerSlab-RegularItalic.otf") format('opentype');
+}
+@font-face {
+	font-family: BommerSlab;
+	font-weight: 800;
+	src: url("/components/com_helkacal/fonts/BommerSlab-Bold.eot");
+	src: url("/components/com_helkacal/fonts/BommerSlab-Bold.eot?#iefix") format('embedded-opentype'),
+	     url("/components/com_helkacal/fonts/BommerSlab-Bold.otf") format('opentype');
+}
+@font-face {
+	font-family: BommerSlab;
+	font-style: italic;
+	src: url("/components/com_helkacal/fonts/BommerSlab-ThinItalic.eot");
+	src: url("/components/com_helkacal/fonts/BommerSlab-ThinItalic.eot?#iefix") format('embedded-opentype'),
+	     url("/components/com_helkacal/fonts/BommerSlab-ThinItalic.otf") format('opentype');
+}
+
+* {
+	font-family: BommerSlab;
+}
+body {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: serif;
+	background: #fff;
+	color: #73FFB2;
+/*	font-size: 75%;*/
+	position: relative;
+/*	border-bottom: 1px dashed red;*/
+}
+#helkacal_allwrapper {
+	background: #0b1114;
+	padding: 5mm 9mm 5mm 9mm;
+}
+div#helkacal_print_header {
+	border-bottom: 2pt solid #73FFB2;
+}
+div#helkacal_print_title {
+	font-size: 60pt;
+	text-transform: uppercase;
+	color: #73FFB2;
+	float: left;
+	letter-spacing: 3pt;
+	font-weight: bold;
+}
+div#helkacal_print_month, hr#helkacal_topseparator {
+	display: inline-block;
+}
+div#helkacal_print_month {
+	color: #FFFFFF;
+	font-style: italic;
+	font-size: 28pt;
+	font-weight: bold;
+	float: right;
+	text-align: right;
+	margin-top: 1em;
+	margin-left: -1em;
+}
+div#helkacal_print_subtitle {
+	width: 100%;
+	display: inline-block;
+	font-size: 42pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #73FFB2;
+	margin-top: -0.44em;
+	letter-spacing: 2.3pt;
+}
+hr#helkacal_topseparator {
+	color: #73FFB2;
+	height: 6px;
+	background: #73FFB2;
+	border: 0;
+	width: 100%;
+}
+.helkacal_events {
+	margin-top: 1em;
+	overflow: hidden;
+	height: 100%;
+/*	-webkit-column-rule: 1pt outset rgb(108, 199, 191);
+	-moz-column-rule: 1pt outset rgb(108, 199, 191);
+	column-rule: 1pt outset rgb(108, 199, 191);*/
+}
+.helkacal_events > div {
+	width: 230px;
+	padding: 0.2em;
+}
+.helkacal_eventsofoneday {
+	display: inline-block;
+}
+.helkacal_divider {
+	border-left: thin solid #73FFB2;
+	pointer-events: none;
+	position: absolute;
+	margin-top: 12px;
+}
+.helkacal_event {
+	display: inline-block;
+	border-top: 0.75pt solid #ffffff;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+}
+.helkacal_continuous_title + div, .helkacal_eventdate + div {
+	border-top: 0;
+}
+.helkacal_continuous_title {
+	text-transform: uppercase;
+	font-size: 10pt;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+	padding-top: 2mm;
+}
+
+.helkacal_eventdate {
+	border-bottom: 3pt solid #73FFB2;
+	position: relative;
+	font-size: 130%;
+	height: 1.4em;
+}
+.helkacal_eventdate div {
+	display: inline-block;
+	position: absolute;
+	color: #73FFB2;
+}
+.helkacal_eventday {
+	left: -0.2em;
+	font-weight: 800;
+	margin: 0.2em;
+}
+.helkacal_eventweekday {
+	right: 0.5em;
+	font-size: 90%;
+	bottom: 0;
+	font-weight: bold;
+}
+img.helkacal_eventimg {
+	width: 100%;
+	margin-bottom: 0.2em;
+}
+.helkacal_categorycontainer {
+	float: right;
+	width: 1.5em;
+	display: inline-table;
+}
+.helkacal_category {
+	width: 1.8em;
+	margin-left: 0.5em;
+	margin-bottom: 0.1em;
+	display: inline-block;
+	float: right;
+}
+.helkacal_category + .helkacal_category {
+	width: 1.5em;
+	margin-right: 1.8pt;
+	margin-top: 1pt;
+}
+img.helkacal_category_symbol {
+	width: 100%;
+	vertical-align: middle;
+}
+.helkacal_title {
+	font-size: 10pt;
+	color: #FFFFFF;
+	text-align: left;
+	font-style: italic;
+	letter-spacing: 0.3pt;
+	line-height: 14pt;
+}
+.helkacal_details {
+	font-size: 8pt;
+	color: #FFFFFF;
+	font-style: italic;
+	float: left;
+	width: 83%;
+	margin-top: 0.2em;
+}
+.helkacal_event_location {
+	font-style: normal;
+	font-weight: normal;
+}
+.helkacal_event_location a {
+	color: inherit;
+	text-decoration: inherit;
+}
+.helkacal_location_name {
+	font-weight: 800;
+	display: inline-block;
+	width: 100%;
+}
+.helkacal_eventdesc {
+	text-align: left;
+	display: inline-block;
+	font-size:8pt;
+
+  -ms-word-break: break-all;
+
+       /* Be VERY careful with this, breaks normal words wh_erever */
+       word-break: break-all;
+
+       /* Non standard for webkit */
+       word-break: break-word;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+.helkacal_places {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.helkacal_place {
+	display: inline-block;
+	float: left;
+	margin: 0.5em 1em;
+	font-style: italic;
+	font-size: 80%;
+}
+.helkacal_eventimg, .helkacal_eventdesc {
+	display: none;
+}
+.helkacal_featured .helkacal_title, .helkacal_featured .helkacal_category {
+	font-size: 120%;
+}
+.helkacal_featured .helkacal_eventimg, .helkacal_featured .helkacal_eventdesc {
+	display: inherit;
+}
+.hidden {
+	display: none !important;
+}
+.helkacal_ilmoita_tapahtumasta {
+	border: 1pt solid white;
+	padding: 0.5em;
+	margin-top: 1.5em;
+}
+.helkacal_ilmoita_tapahtumasta_title {
+	color: white;
+	text-transform: uppercase;
+	font-style: italic;
+	margin-bottom: 0.1em;
+	font-size: 12pt;
+	margin-bottom: 4pt;
+}
+.helkacal_ilmoita_tapahtumasta_desc {
+	font-size: 10pt;
+	font-style: italic;
+}
+.helkacal_site_url {
+	color: white;
+	letter-spacing: 3pt;
+	width: 100%;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+.helkacal_site_logo {
+	text-align: center;
+}
+.helkacal_site_logo img {
+	width: 7em;
+}
+.helkacal_event:hover, .helkacal_print_hover {
+	opacity: 0.5;
+}
+.helkacal_event, .helkacal_continuous_title, helkacal_event_location a, .helkacal_eventsofoneday {
+	cursor: url('/components/com_helkacal/img/trash.cur'), auto;
+}

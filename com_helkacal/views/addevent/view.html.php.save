@@ -1,0 +1,85 @@
+<?php
+ 
+// No direct access to this file
+defined('_JEXEC') or die;
+ 
+// import Joomla view library
+jimport('joomla.application.component.view');
+ 
+/**
+* HTML View class for the HelkaCal Component
+*
+* @since 0.0.1
+*/
+class HelkaCalViewAddEvent extends JViewLegacy
+{
+	public function __construct() {
+		  // TODO: Put these in a config file or something.
+        // (preferably make it a setting editable from the Joomla! backend)
+        private static $shareddb = 'helkashared';
+        private static $sharedtbl = 'j33_helkacal';
+        private static $sharedlinktbl = 'jos_joomla_db_link';
+	}
+	å
+        /**
+         * Display the Calendar view
+         *
+         * @param   string  $tpl  The name of the template file to parse; automatically searches through the template paths.
+         *
+         * @return  void
+         */
+        public function display($tpl = null)
+        {
+                // Assign data to the view
+                //$this->events = $this->get('Events("2014-10-01", "2014-12-01")');
+
+		// Check for errors.
+		if (count($errors = $this->get('Errors')))
+		{
+			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
+			return false;
+		}
+
+		// If form is sent, process it. Else, show form.
+		if (isset($_POST['submit'])) {
+			$storeresults = $this->store();
+			if ($storeresults) echo 'Form was submitted succesfully. ArticleID: '.$storeresults;
+			else echo 'Form storage failed.';
+		}
+		else {
+			// Show template
+			parent::display($tpl);
+		}
+        }
+
+	/**
+	 * Store event details
+	 *
+	 * @return	mixed	false on failure, articleid on success.
+	 */
+	public function store() {
+		if (!isset($_POST['submit'])) return false;
+
+		// Create new event
+		$db = JFactory::getDbo();
+		$event = new JTableEvent($db);
+
+		// Insert even information in the object
+		$event->title = $_POST['addEventFields[eventName]'];
+		$event->fulltext = $_POST['addEventFields[eventDesc]'];
+		$event->start_time = $_POST['addEventFields[startday]'].' '.$_POST['addEventFields[starthour]'].':'.$_POST['addEventFields[startminute]'].':00';
+		$event->end_time = $_POST['addEventFields[endday]'].' '.$_POST['addEventFields[endhour]'].':'.$_POST['addEventFields[endminute]'].':00';
+		if ($event->end_time == '0000-00-00 00:00:00') $event->end = 'NULL';
+		if ($_POST['addEventFields[allday]']) $event->whole_day = 1; else $event->whole_day = 0;
+		$event->location = $_POST['addEventFields[location]'];
+		$event->url = $_POST['addEventFields[url]'];
+		$event->tickets = $_POST['addEventFields[tickets]'];
+
+		// store event
+		$result = $event->store();
+		if (!$result) return false;
+		return $event->getArticleId();
+	}
+}
+
+?>

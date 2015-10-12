@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+	<title>Google Maps Latitude and Longitude Picker jQuery plugin</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--link rel="stylesheet" type="text/css" href="css/demo.css"/-->
+
+	<!-- Dependencies: JQuery and GMaps API should be loaded first -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+	<!-- CSS and JS for our code -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-gmaps-latlon-picker.css"/>
+	<script src="js/jquery-gmaps-latlon-picker.js"></script>
+</head>
+<body>
+
+<form>
+	<fieldset class="gllpLatlonPicker" id="custom_id">
+		<input type="text" class="gllpSearchField">
+		<input type="button" class="gllpSearchButton" value="search">
+		<br/><br/>
+		<div class="gllpMap">Google Maps</div>
+		<input type="hidden" class="gllpLatitude" value="60"/>
+		<input type="hidden" class="gllpLongitude" value="30"/>
+		<input type="hidden" class="gllpZoom" value="12"/>
+	</fieldset>
+</form>
+	
+</body>
+</html>

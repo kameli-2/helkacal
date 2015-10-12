@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Kotikatu Calendar Module</name>
+    <author>Zsolt Szilagyi</author>
+    <version>1.0.0</version>
+    <description>A Module with different views for HelkaCal-component.</description>
+    <files>
+        <filename>mod_helkacal.xml</filename>
+        <filename module="mod_helkacal">mod_helkacal.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+	<folder>img</folder>
+    </files>
+    <languages>
+	<language tag="fi-FI">fi-FI.mod_helkacal.ini</language>
+    </languages>
+    <config>
+	<fields name="params">
+	    <fieldset name="basic">
+                <field
+                        name="calendarurl"
+                        type="menuitem"
+                        label="MOD_HELKACAL_CALENDARURL_LABEL"
+                        description="MOD_HELKACAL_CALENDARURL_DESC"
+                />
+		<field
+			name="calendarstyle"
+			type="text"
+			default="default"
+			label="MOD_HELKACAL_STYLE_LABEL"
+			description="MOD_HELKACAL_STYLE_DESC"
+		/>
+		<field
+			name="categorysymbols"
+			type="radio"
+			default="0"
+			label="MOD_HELKACAL_CATEGORYSYMBOLS_LABEL"
+			description="MOD_HELKACAL_CATEGORYSYMBOLS_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+	    </fieldset>
+	    <fieldset name="frontpage">
+		<field
+			name="title"
+			type="text"
+			label="MOD_HELKACAL_TITLE_LABEL"
+			desc="MOD_HELKACAL_TITLE_DESC"
+		/>
+		<field
+			name="bgcolor"
+			type="color"
+			default="#ffffff"
+			label="MOD_HELKACAL_BGCOLOR_LABEL"
+			description="MOD_HELKACAL_BGCOLOR_DESC"
+		/>
+		<field
+			name="pages"
+			type="integer"
+			default="8"
+			label="MOD_HELKACAL_PAGES_LABEL"
+			description="MOD_HELKACAL_PAGES_DESC"
+			first="1"
+			last="50"
+			step="1"
+		/>
+		<field
+			name="show_introtext"
+			type="radio"
+			default="1"
+			label="MOD_HELKACAL_INTROTEXT_LABEL"
+			description="MOD_HELKACAL_INTROTEXT_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+                                <field
+                                        name="introtext_limit"
+                                        type="text"
+                                        default="100"
+                                        label="MOD_ARTICLES_CATEGORY_FIELD_INTROTEXTLIMIT_LABEL"
+                                        description="MOD_ARTICLES_CATEGORY_FIELD_INTROTEXTLIMIT_DESC" />
+		<field
+			name="show_readmore"
+			type="radio"
+			default="1"
+			label="MOD_HELKACAL_SHOW_READMORE_LABEL"
+			description="MOD_HELKACAL_SHOW_READMORE_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+		<field
+			name="postalcode"
+			type="radio"
+			default="1"
+			label="MOD_HELKACAL_POSTALCODE_LABEL"
+			description="MOD_HELKACAL_POSTALCODE_DESC"
+		>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>		
+	    </fieldset>
+            <fieldset name="advanced">
+		<field
+		    name="layout"
+		    type="modulelayout"
+		    label="JFIELD_ALT_LAYOUT_LABEL"
+		    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+		/>
+	    </fieldset>
+	</fields>
+    </config>
+</extension>

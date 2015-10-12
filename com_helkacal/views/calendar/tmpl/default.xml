@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+        <layout title="COM_HELKACAL_CALENDAR_VIEW_DEFAULT_TITLE">
+                <message>
+                        <![CDATA[COM_HELKACAL_CALENDAR_VIEW_DEFAULT_DESC]]>
+                </message>
+        </layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="category"
+				type="category"
+				description="COM_HELKACAL_ADDEVENT_CATEGORY_DESC"
+				extension="com_content"
+				label="COM_HELKACAL_ADDEVENT_CATEGORY_LABEL"
+				multiple="true"
+			/>
+			<field
+				name="categorydepth"
+				type="integer"
+				first="0"
+				last="10"
+				step="1"
+				default="2"
+				label="COM_HELKACAL_ADDEVENT_DEPTH_LABEL"
+				description="COM_HELKACAL_ADDEVENT_DEPTH_DESC"
+			/>
+			<field
+				name="state"
+				type="list"
+				multiple="true"
+				default="1"
+				label="COM_HELKACAL_STATE_LABEL"
+				description="COM_HELKACAL_STATE_DESC"
+			>
+				<option value="1">COM_HELKACAL_STATE_PUBLISHED</option>
+				<option value="0">COM_HELKACAL_STATE_PENDING</option>
+				<option value="-2">COM_HELKACAL_STATE_DELETED</option>
+			</field>
+			<field
+				name="past"
+				type="list"
+				multiple="true"
+				default="1"
+				label="COM_HELKACAL_PAST_LABEL"
+				description="COM_HELKACAL_PAST_DESC"
+			>
+				<option value="1">COM_HELKACAL_PAST_UPCOMING</option>
+				<option value="2">COM_HELKACAL_PAST_PAST</option>
+			</field>
+			<field
+				name="postalcode"
+				type="radio"
+				default="1"
+				label="COM_HELKACAL_SHOW_POSTAL_CODE_LABEL"
+				description="COM_HELKACAL_SHOW_POSTAL_CODE_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="socialmedia"
+				type="radio"
+				default="1"
+				label="COM_HELKACAL_SHOW_SOCIALMEDIA_LABEL"
+				description="COM_HELKACAL_SHOW_SOCIALMEDIA_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="socialmediacomment"
+				type="radio"
+				default="0"
+				label="COM_HELKACAL_SHOW_SOCIALMEDIACOMMENT_LABEL"
+				description="COM_HELKACAL_SHOW_SOCIALMEDIACOMMENT_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="showmap"
+				type="radio"
+				default="1"
+				label="COM_HELKACAL_SHOWMAP_LABEL"
+				description="COM_HELKACAL_SHOWMAP_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="categoryfilter"
+				type="radio"
+				default="1"
+				label="COM_HELKACAL_SHOW_CATEGORYFILTER_LABEL"
+				description="COM_HELKACAL_SHOW_CATEGORYFILTER_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field
+				name="showcategories"
+				type="radio"
+				default="1"
+				label="COM_HELKACAL_SHOW_CATEGORIES_LABEL"
+				description="COM_HELKACAL_SHOW_CATEGORIES_DESC"
+			>
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+        	        <field
+	                        name="addeventurl"
+                        	type="menuitem"
+                	        label="COM_HELKACAL_ADDEVENTURL_LABEL"
+        	                description="COM_HELKACAL_ADDEVENTURL_DESC"
+	                />
+			<field
+				name="style"
+				type="text"
+				default="default"
+				label="COM_HELKACAL_STYLE_LABEL"
+				description="COM_HELKACAL_STYLE_DESC"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

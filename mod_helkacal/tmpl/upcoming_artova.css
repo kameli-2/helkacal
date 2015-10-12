@@ -1,0 +1,83 @@
+.mod_helkacal_upcoming .helkacal_event {
+	border: none;
+	margin: 0;
+	padding: 0.2em;
+	box-shadow: none;
+	background-color: inherit;
+}
+.mod_helkacal_upcoming .helkacal_event div {
+	display: inline-block;
+}
+.mod_helkacal_upcoming .helkacal_date {
+	max-height: 2em;
+	border: 3px solid rgb(218, 0, 0);
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	padding: 0.1em;
+	vertical-align: top;
+	width: 10%;
+	min-width: 1.3em;
+	max-width: 1.8em;
+}
+.mod_helkacal_upcoming div.helkacal_date div {
+	display: block;
+	margin: -0.2em 0;
+}
+.mod_helkacal_upcoming div.helkacal_titlecontainer {
+	font-size: 130%;
+	width: 60%;
+	padding: 0 0.2em;
+	vertical-align: middle;
+}
+.mod_helkacal_upcoming .helkacal_titlecontainer div {
+	width: 100%;
+	display: block;
+	font-family: 'OpenSans-Regular', Arial, sans-serif;
+	line-height: 90%;
+}
+.mod_helkacal_upcoming .helkacal_title a {
+	color: black;
+	text-decoration: none;
+}
+.mod_helkacal_upcoming .helkacal_title a {
+	font-size: 18px;
+}
+.mod_helkacal_upcoming .helkacal_datecontainer .helkacal_smallmonth {
+	font-size: 35%;
+}
+.mod_helkacal_upcoming .helkacal_datecontainer .helkacal_day {
+	font-size: 80%;
+}
+.mod_helkacal_upcoming div.helkacal_categorycontainer {
+	width: 10%;
+	min-width: 2.4em;
+	max-width: 4em;
+	float: right;
+}
+.mod_helkacal_upcoming .helkacal_category {
+	width: 10%;
+	min-width: 2.4em;
+	max-width: 4em;
+	float: right;
+	display: inline-block;
+	background-color: #ccc;
+	border: 1px solid transparent;
+	border-radius: 3em;
+	overflow: hidden;
+}
+.mod_helkacal_upcoming .helkacal_category .helkacal_category_symbol {
+	border-radius: 3em;
+	margin: -2px;
+	width: 109%;
+	text-align: center;
+}
+.mod_helkacal_upcoming img.helkacal_category_symbol {
+	width: 100%;
+	vertical-align: middle;
+}
+.mod_helkacal_upcoming .helkacal_eventtime, .mod_helkacal_upcoming .helkacal_location, .mod_helkacal_upcoming .helkacal_eventdesc, .mod_helkacal_upcoming .helkacal_some {
+	display: none !important;
+}

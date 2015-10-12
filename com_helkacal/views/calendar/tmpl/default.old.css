@@ -1,0 +1,220 @@
+div.helkacal_event {
+	margin: 1em 0;
+	padding: 1em;
+	box-shadow: 0px 0px 12px -5px black;
+	background-color: rgb(251,251,251);
+}
+div.helkacal_event:hover {
+	background-color: white;
+}
+div.helkacal_event div {
+	display: inline-block;
+}
+div.helkacal_date {
+	border: 3px solid rgb(218, 0, 0);
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	padding: 0.1em;
+	vertical-align: top;
+	width: 10%;
+	min-width: 1.3em;
+	max-width: 1.8em;
+}
+div.helkacal_date div {
+	display: block;
+	margin: -0.2em 0;
+}
+div.helkacal_smallmonth {
+	font-size: 40%;
+	font-weight: normal;
+}
+div.helkacal_titlecontainer {
+	font-size: 130%;
+	width: 60%;
+	padding: 0 0.2em;
+	vertical-align: middle;
+}
+div.helkacal_eventtime, div.helkacal_location {
+	font-size: 70%;
+	color: grey;
+}
+
+div.helkacal_location a:link, div.helkacal_location a:visited {
+	color: grey;
+	text-decoration: inherit;
+}
+div.helkacal_location a:active, div.helkacal_location a:hover {
+	text-decoration: underline;
+}
+
+div.helkacal_titlecontainer div {
+	width: 100%;
+	display: block;
+}
+div.helkacal_categorycontainer {
+        width: 10%;
+        min-width: 2.4em;
+        max-width: 4em;
+        float: right;
+        display: inline-block;
+}
+img.helkacal_category_symbol {
+	width: 100%;
+	vertical-align: middle;
+}
+h2.helkacal_month {
+	text-transform: capitalize;
+}
+.helkacal_eventdesc, .helkacal_eventdesc div {
+	width: 100%;
+	
+  -ms-word-break: break-all;
+
+       /* Be VERY careful with this, breaks normal words wh_erever */
+       word-break: break-all;
+
+       /* Non standard for webkit */
+       word-break: break-word;
+
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+          hyphens: auto;
+}
+.helkacal_eventdesc img {
+	max-width: 100%;
+}
+.helkacal_url {
+	margin: 0.5em 0;
+}
+.helkacal_contactinfo {
+	white-space: pre;
+	font-size: 80%;
+	border: thin solid #cccccc;
+	background-color: #f6f6f6;
+	padding: 0.2em;
+	margin: 0.2em 0;
+	display: inline-block;
+}
+.helkacal_contactinfo img {
+	float: left;
+	margin-right: 1em;
+}
+.helkacal_publishbuttons {
+	text-align: center;
+	margin-top: 1em;
+	display: inline-block;
+	width: 100%;
+}
+.helkacal_publishbuttons .helkacal_publishbuttoncontainer {
+	width: 6em;
+	font-size: 60%;
+	overflow: hidden;
+	display: inline-block;
+}
+.helkacal_publishbuttons div div {
+	border-radius: 3em;
+	width: 3em;
+	height: 3em;
+	padding: 3px;
+	margin: 0 1em;
+	color: transparent;
+	background-repeat: no-repeat;
+	background-size: 3.6em;
+	cursor: hand;
+	cursor: pointer;
+	display: inline-block;
+}
+.helkacal_publish, .helkacal_success {
+	border: 2px solid green;
+	background-color: lightgreen;
+}
+.helkacal_publish {
+	background-image: url('../../../img/publish.png');
+}
+.helkacal_publish:hover {
+	background-color: rgb(165, 255, 165);
+}
+.helkacal_delete {
+	border: 2px solid red;
+	background-color: rgb(255, 155, 155);
+	background-image: url('../../../img/delete.png');
+}
+.helkacal_delete:hover {
+	background-color: rgb(255, 180, 180);
+}
+.helkacal_edit {
+	border: 2px solid rgb(166, 166, 0);
+	background-color: rgb(255, 255, 56);
+	background-image: url('../../../img/edit.png');
+}
+.helkacal_edit:hover {
+	background-color: rgb(255, 255, 200);
+}
+.helkacal_loading {
+	background-image: url('../../../img/loading.gif');
+}
+.helkacal_success {
+	background-image: url('../../../img/success.png');
+}
+#helkacal_catfiltercontainer {
+	display: inline-block;
+}
+.helkacal_category {
+	width: 10%;
+	min-width: 2.4em;
+	max-width: 4em;
+	float: right;
+	display: inline-block;
+	background-color: #ccc;
+	border: 1px solid transparent;
+	border-radius: 3em;
+	overflow: hidden;
+}
+#helkacal_catfiltercontainer .helkacal_category:hover {
+	border-color: black;
+	cursor: hand;
+	cursor: pointer;
+}
+.helkacal_category .helkacal_category_symbol {
+	border-radius: 3em;
+	margin: -2px;
+	width: 109%;
+	text-align: center;
+}
+#helkacal_catfiltercontainer .helkacal_category {
+	width: 3em;
+	height: 3em;
+	float: none;
+	margin: 0 0.5em;
+	position: relative;
+}
+#helkacal_catfiltercontainer .helkacal_category_symbol {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+.helkacal_catinactive {
+	opacity: 0.3;
+}
+h2.helkacal_eventtitle {
+	margin-bottom: 0;
+}
+.helkacal_title a {
+	color: black;
+	text-decoration: none;
+}
+.helkacal_title a:active, .helkacal_title a:hover {
+	color: grey;
+}
+.helkacal_eventtime img, .helkacal_location img {
+	max-height: 1em;
+	margin: 0 0.2em;
+}
+.hidden {
+	display: none !important;
+}

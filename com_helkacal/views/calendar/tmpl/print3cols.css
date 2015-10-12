@@ -1,0 +1,8 @@
+.helkacal_events {
+	-webkit-columns: 60mm 3;
+	-moz-columns: 60mm 3;
+	columns: 60mm 3;
+}
+.helkacal_event {
+	width: 60mm;
+}
